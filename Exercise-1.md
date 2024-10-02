@@ -23,6 +23,14 @@ In this exercise, we will explore data preprocessing with Python using the popul
 5. **Print X and y**:  
    Finally, print the matrix of features (`X`) and the dependent variable vector (`y`) to verify their creation. You can use the `print()` function for this.
 
+Hint 1: Use import pandas as pd to import the pandas library, which provides the read_csv function for loading the Iris dataset.
+
+Hint 2: The read_csv function from pandas is used to read a CSV file into a DataFrame. Use it like this: pd.read_csv('filename.csv').
+
+Hint 3: A matrix of features (X) and the dependent variable vector (y) can be created from a dataset like this: X = dataset.iloc[:, :-1].values and y = dataset.iloc[:, -1].values. This uses the iloc indexer to select all rows and all columns except the last one for X, and all rows of the last column for y.
+
+Hint 4: Remember to print your matrix of features (X) and dependent variable vector (y) to verify their creation. You can simply use the print function for this.
+
 #### Solution in Python:
 
 ```python
